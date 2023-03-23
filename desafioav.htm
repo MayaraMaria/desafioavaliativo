@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Avaliativo</title>
+    <style>
+       
+        body {
+            margin: 40px;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;            
+            margin: auto;
+        }
+
+        .cabecalho {
+            display: flex;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            align-items: center;
+            background-color: rgb(47, 108, 174);
+            flex-direction: column;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgb(43, 45, 46);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+
+        .menu a:hover {
+            background-color: white;
+            transition: 0.2s;
+            color: black;
+        }
+        .corpo{
+            display: flex;
+        }
+
+        .lateral {            
+            flex: 30%;
+            background-color: rgb(241, 241, 241);
+            padding: 15px;
+        }
+
+        .conteudo{
+            flex: 70%;
+            padding: 15px;
+            
+        }
+
+        .rodape {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(221, 221, 221);
+            padding: 10px;
+            color: black;
+            
+        }
+        .conteudo b{
+            font-size: 13px;
+        }
+
+        .conteudo img{
+            max-width: 100%;
+        }
+        .lateral img{
+            max-width: 100%;
+        }
+        @media screen and (max-width: 650px){
+            .container{
+                width: 100%;
+            }
+            .menu{
+                flex-direction: column;
+            }
+            .menu a{
+                text-align: center;
+            }
+            .corpo{
+                flex-direction: column;
+            }
+            .conteudo img{
+                flex-direction: column;
+            }
+            .lateral img{
+                flex-direction: column;
+            }
+
+           
+        }
+        @media screen and (max-width: 430px){
+            .cabecalho{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Senac São Paulo</h1>
+            <p>Desenvolvimento de layout com flex layout.</p>
+        </div>
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
+        </div>
+
+        <div class="corpo">
+
+            <div class="lateral">
+                <h2>O Senac</h2>
+                <img src="../desafioavaliativo/imgdesafio/fotolateral.jpg" alt="Imagem cinza">
+                <p>Lorem ipsum dolor sit amet.</p>
+    
+            </div>
+
+          <div class="conteudo">
+            <h1>Título da Postagem</h1>
+            <p><b>Mayara Maria, may 27,2023</b></p>
+            <img src="../desafioavaliativo/imgdesafio/fotocorpo.jpg" alt="Imagem cinza">
+            <p>Lorem Lorem Lorem</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatem ipsum in suscipit delectus
+                repudiandae adipisci illo dolorem aut inventore perspiciatis qui optio vitae possimus, nulla, eos magni,
+                vel ad.</p>
+        </div>
+        
+    </div>
+        <div class="rodape">
+            <p>
+            <h1>&copy;Senac 2023.</h1>
+            </p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
